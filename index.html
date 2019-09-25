@@ -1,1 +1,93 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Remedy Prototype</title>
+    <style>
+        .grid-container {
+            display: flex;
+            width: 90%;
+            flex-wrap: wrap;
+        }
+
+        .grid-item {
+            margin: 15px;
+        }
+    </style>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    
+  </head>
+  <body>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139158585-WQHE8KQDKZLP7ATYO62N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/sonnys-3.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
+        </div>
+        <div class="grid-item">
+                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139014882-OJB3DIDYYR20EZA4JV1O/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/crossrope2.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
+        </div>
+        <div class="grid-item">
+                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568138869428-2SWDOVIRGVEPJUCQIC7N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/lowes2.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
+        </div>
+        <div class="grid-item">
+                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568140564177-CJ5U9QJVAYMOI8ZCFPH5/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/furon.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
+        </div>
+        <div class="grid-item">
+                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568144190408-UXFS7SM8QPQOLGZN9J3G/ke17ZwdGBToddI8pDm48kIisVeufsLaqPYS75OuX1FxZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGUIyZMpo6jDvOlV8ELZznZDi-rr9EJ6o3n8IpvEJDIMaEcAfnVBrEqrgp1UxUHGkY/burts.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
+        </div>
+        <div class="grid-item">
+                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568143211545-UIAUEAHT4C0FV6UIMDXZ/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/espn5.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
+        </div>
+    </div>
+
+
+    <!--
+        GIF URLs
+        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139158585-WQHE8KQDKZLP7ATYO62N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/sonnys-3.gif?format=750w
+        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139014882-OJB3DIDYYR20EZA4JV1O/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/crossrope2.gif?format=750w
+        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568138869428-2SWDOVIRGVEPJUCQIC7N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/lowes2.gif?format=750w
+        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568140564177-CJ5U9QJVAYMOI8ZCFPH5/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/furon.gif?format=750w
+        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568144190408-UXFS7SM8QPQOLGZN9J3G/ke17ZwdGBToddI8pDm48kIisVeufsLaqPYS75OuX1FxZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGUIyZMpo6jDvOlV8ELZznZDi-rr9EJ6o3n8IpvEJDIMaEcAfnVBrEqrgp1UxUHGkY/burts.gif?format=750w
+        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568143211545-UIAUEAHT4C0FV6UIMDXZ/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/espn5.gif?format=750w
+
+    -->
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $(".hover-image").each(function(){
+                var imageURL = $(this).attr("data-animation");
+                var img = new Image();
+                img.src = imageURL;
+                //If the browser doesn't support hover
+                if (!Modernizr.hovermq) {
+                    this.src = imageURL;
+                } 
+            });
+
+            if (Modernizr.hovermq) {
+                $(".hover-image").hover(function(){
+                    //Hover In
+                    var imageURL = $(this).attr("data-animation");
+                    this.src = imageURL;
+                }, function(){
+                    //Hover Out
+                    var imageURL = $(this).attr("data-static");
+                    this.src = imageURL;
+                });
+            }
+        });
+
+
+    </script>
+  
+    <script type="text/javascript">
+  /*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-hovermq-setclasses !*/
+!function(e,n,t){function o(e){var n=h.className,t=Modernizr._config.classPrefix||"";if(m&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),m?h.className.baseVal=n:h.className=n)}function i(e,n){return typeof e===n}function s(){var e,n,t,o,s,a,r;for(var l in d)if(d.hasOwnProperty(l)){if(e=[],n=d[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=i(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)a=e[s],r=a.split("."),1===r.length?Modernizr[r[0]]=o:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=o),u.push((o?"":"no-")+r.join("-"))}}function a(e,n){if("object"==typeof e)for(var t in e)p(e,t)&&a(t,e[t]);else{e=e.toLowerCase();var i=e.split("."),s=Modernizr[i[0]];if(2==i.length&&(s=s[i[1]]),"undefined"!=typeof s)return Modernizr;n="function"==typeof n?n():n,1==i.length?Modernizr[i[0]]=n:(!Modernizr[i[0]]||Modernizr[i[0]]instanceof Boolean||(Modernizr[i[0]]=new Boolean(Modernizr[i[0]])),Modernizr[i[0]][i[1]]=n),o([(n&&0!=n?"":"no-")+i.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function r(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):m?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function l(){var e=n.body;return e||(e=r(m?"svg":"body"),e.fake=!0),e}function f(e,t,o,i){var s,a,f,u,d="modernizr",c=r("div"),p=l();if(parseInt(o,10))for(;o--;)f=r("div"),f.id=i?i[o]:d+(o+1),c.appendChild(f);return s=r("style"),s.type="text/css",s.id="s"+d,(p.fake?p:c).appendChild(s),p.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=d,p.fake&&(p.style.background="",p.style.overflow="hidden",u=h.style.overflow,h.style.overflow="hidden",h.appendChild(p)),a=t(c,e),p.fake?(p.parentNode.removeChild(p),h.style.overflow=u,h.offsetHeight):c.parentNode.removeChild(c),!!a}var u=[],d=[],c={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){d.push({name:e,fn:n,options:t})},addAsyncTest:function(e){d.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=c,Modernizr=new Modernizr;var p,h=n.documentElement,m="svg"===h.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;p=i(e,"undefined")||i(e.call,"undefined")?function(e,n){return n in e&&i(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),c._l={},c.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},c._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,o;for(e=0;e<t.length;e++)(o=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){c.addTest=a});var v=function(){var n=e.matchMedia||e.msMatchMedia;return n?function(e){var t=n(e);return t&&t.matches||!1}:function(n){var t=!1;return f("@media "+n+" { #modernizr { position: absolute; } }",function(n){t="absolute"==(e.getComputedStyle?e.getComputedStyle(n,null):n.currentStyle).position}),t}}();c.mq=v,Modernizr.addTest("hovermq",v("(hover)")),s(),o(u),delete c.addTest,delete c.addAsyncTest;for(var g=0;g<Modernizr._q.length;g++)Modernizr._q[g]();e.Modernizr=Modernizr}(window,document);
+  </script>
+  </body>
+</html>
