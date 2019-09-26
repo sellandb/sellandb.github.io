@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <title>Remedy Prototype</title>
     <style>
+        #canvas
+        {
+            max-width: 1200px;
+            margin: 10px auto;
+            padding: 20px;
+        }
         .grid-container {
             display: flex;
-            width: 90%;
             flex-wrap: wrap;
+            clear: both;
         }
 
         .grid-item {
-            margin: 15px;
+            width: 30%;
+            max-width: 380px;
+            margin-top: 2.5%;
+            margin-left: 2.5%;
+        }
+
+        img.hover-image {
+            width: 100%;
+        }
+        @media only screen and (max-width: 750px) {
+            .grid-item {
+                width: 100%;
+                max-width: none;
+                margin-top: 2.5%;
+                margin-left: 2.5%;
+            }
         }
     </style>
     <script
@@ -22,25 +43,38 @@
     
   </head>
   <body>
-
-    <div class="grid-container">
-        <div class="grid-item">
-            <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139158585-WQHE8KQDKZLP7ATYO62N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/sonnys-3.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
-        </div>
-        <div class="grid-item">
-                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139014882-OJB3DIDYYR20EZA4JV1O/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/crossrope2.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
-        </div>
-        <div class="grid-item">
-                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568138869428-2SWDOVIRGVEPJUCQIC7N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/lowes2.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
-        </div>
-        <div class="grid-item">
-                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568140564177-CJ5U9QJVAYMOI8ZCFPH5/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/furon.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
-        </div>
-        <div class="grid-item">
-                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568144190408-UXFS7SM8QPQOLGZN9J3G/ke17ZwdGBToddI8pDm48kIisVeufsLaqPYS75OuX1FxZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGUIyZMpo6jDvOlV8ELZznZDi-rr9EJ6o3n8IpvEJDIMaEcAfnVBrEqrgp1UxUHGkY/burts.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
-        </div>
-        <div class="grid-item">
-                <img width="320" height="180" class="hover-image" data-animation="https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568143211545-UIAUEAHT4C0FV6UIMDXZ/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/espn5.gif?format=750w" data-static="//via.placeholder.com/320x180" src="//via.placeholder.com/320x180" />
+    <div id="canvas">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="#">
+                    <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139158585-WQHE8KQDKZLP7ATYO62N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/sonnys-3.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
+                </a>
+            </div>
+            <div class="grid-item">
+                    <a href="#">
+                        <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139014882-OJB3DIDYYR20EZA4JV1O/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/crossrope2.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
+                    </a>
+            </div>
+            <div class="grid-item">
+                    <a href="#">
+                    <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568138869428-2SWDOVIRGVEPJUCQIC7N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/lowes2.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
+                    </a>
+            </div>
+            <div class="grid-item">
+                    <a href="#">
+                    <img  class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568140564177-CJ5U9QJVAYMOI8ZCFPH5/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/furon.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
+                    </a>
+                </div>
+            <div class="grid-item">
+                    <a href="#">
+                    <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568144190408-UXFS7SM8QPQOLGZN9J3G/ke17ZwdGBToddI8pDm48kIisVeufsLaqPYS75OuX1FxZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGUIyZMpo6jDvOlV8ELZznZDi-rr9EJ6o3n8IpvEJDIMaEcAfnVBrEqrgp1UxUHGkY/burts.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
+                    </a>
+            </div>
+            <div class="grid-item">
+                    <a href="#">
+                    <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568143211545-UIAUEAHT4C0FV6UIMDXZ/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/espn5.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
+                    </a>
+            </div>
         </div>
     </div>
 
