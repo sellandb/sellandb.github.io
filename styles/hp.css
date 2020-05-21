@@ -739,6 +739,10 @@ div.carousel img.owl-prev{
     .mobile-only{
         display: none !important;
     }
+    .pdx-5{
+        padding-right: 3rem!important;
+        padding-left: 3rem!important;
+    }
 }
 
 
