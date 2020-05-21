@@ -73,25 +73,25 @@ function ajax(method, url, data, success, error) {
 //Navigation Scrolling
 
 $('#tale_btn').click(function () {
-    $('.content-container')[0].scrollIntoView({
+    $('#ABOUT')[0].scrollIntoView({
         behavior: "smooth", // or "auto" or "instant"
         block: "start" // or "end"
     });
 });
 $('#mission_btn').click(function () {
-    $('#missions_block')[0].scrollIntoView({
+    $('#PROJECTS')[0].scrollIntoView({
         behavior: "smooth", // or "auto" or "instant"
         block: "start" // or "end"
     });
 });
 $('#talent_btn').click(function () {
-    $('#talent_block')[0].scrollIntoView({
+    $('#TALENT')[0].scrollIntoView({
         behavior: "smooth", // or "auto" or "instant"
         block: "start" // or "end"
     });
 });
 $('#contact_btn').click(function () {
-    $('.form-container')[0].scrollIntoView({
+    $('#CONTACT')[0].scrollIntoView({
         behavior: "smooth", // or "auto" or "instant"
         block: "start" // or "end"
     });
