@@ -1,0 +1,951 @@
+.modal-header{
+	border-bottom: none;
+}
+.modal-footer{
+	border-top: none;
+}
+.contact-info span {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Tw Cen MT Std';
+    color: #6f6f6f;
+}
+.form-row.contact-info {
+    margin: 0px 0 10px;
+}
+.send-textarea{
+	padding-left: 20px !important;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.with-errors{
+	color: red;
+}
+.send-form-input{
+	padding-left: 20px !important;
+	background-color: #f2f2f2 !important; 
+	border: 1px solid #707070;
+	border-radius: 10px;
+	opacity: 1;
+	width: 100%;
+}
+input[type="text"], input[type="email"] {
+    font-size: 1.6rem;
+    color: #010100;
+    width: 100%;
+    line-height: 65px;
+    padding-left: 3rem;
+}
+.text-white {
+    color: #fff!important;
+}
+.font-w400 {
+    font-weight: 400;
+}
+.padding-top-xl {
+    padding-top: 5rem!important;
+}
+.padding-bottom-xl {
+    padding-bottom: 5rem!important;
+}
+.margin-top-m {
+    margin-top: 3rem!important;
+}
+.margin-bottom-m {
+    margin-bottom: 3rem!important;
+}
+.section5 h2 {
+    line-height: 35px;
+}
+.section5 p {
+    font-size: 16px;
+    line-height: 26px;
+}
+.has-error input[type="text"], .has-error input[type="email"], .has-error select {
+    border: 1px solid #a94442;
+}
+.form-container-inner{
+	max-width: 500px;
+}
+.hidden-emp-block{
+	display: none;
+	padding-bottom: 35px;
+}
+.employee{
+    border: 1px solid black;
+    background-color: #FFF;
+    box-shadow: 20px 20px #cecece;
+    flex-basis: 30%;
+    padding: 45px 0;
+}
+
+.employees-container>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.employee-title{
+	font-family: 'Roboto Slab', serif;
+	font-size: 23px;
+	font-weight: bold;
+}
+.employee-position{
+	font-family: 'Tw Cen MT Std';
+	font-size: 23px;
+    font-weight: 400;
+}
+.initials:after{
+	content: "";
+    display: block;
+    margin: 0 auto;
+    width: 9%;
+    border-bottom: 2px solid grey;
+}
+.initials{
+    font-family: 'Tw Cen MT Std';
+	color: #FF0000;
+	font-weight: 700;
+}
+
+.nav-link:before{
+  counter-increment: section;
+  position: absolute;
+  color: #C62B2B;
+  left: 20%;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  font-family: 'Abril Fatface', serif;
+  line-height: 1.5em;
+  margin: 7px;
+}
+#tele-input{
+	height: 50px;
+}
+body{
+	font-family: 'Source Serif Pro';
+	background-color: #f2f2f2!important;
+	counter-reset: section;
+}
+.visit-site-link{
+	color: #2D6DA3 !important;
+}
+.content-container-wrapper{
+	padding-right: 15px !important;
+    padding-left: 15px !important;
+	}
+/*****************************************************************/
+
+/*****************************************************************/
+
+div.capital-heading .block-title span{
+	left: -10px;
+}
+
+
+.underline-3{
+	display: inline-block;
+    position: relative;
+}
+.underline-3::after{
+	content: "";
+    position: absolute;
+    right: 3px;
+    left: 0px;
+    background: gray;
+    bottom: 0px;
+    z-index: -1;
+    height: 3px;
+}
+
+.underline-5{
+	display: inline-block;
+    position: relative;
+}
+.underline-5::after{
+	content: "";
+    position: absolute;
+    right: 5px;
+    left: 0px;
+    background: gray;
+    bottom: 2px;
+    z-index: -1;
+    height: 3px;
+}
+
+.underline-7{
+	display: inline-block;
+    position: relative;
+}
+.underline-7::after{
+	content: "";
+    position: absolute;
+    right: 7px;
+    left: 0px;
+    background: gray;
+    bottom: 0px;
+    z-index: -1;
+    height: 3px;
+}
+
+.our-mission-title{
+	font-size: 23px;
+}
+.btn-link {
+    text-decoration: none !important;
+    font-family: 'Tw Cen MT Std' !important;
+
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 8px;
+    text-align: left;
+    color: #000000;
+}
+.row.vdivide [class*='col-']:not(:last-child):after {
+	background: #cbba5e;
+	width: 1px;
+	content: "";
+	display:block;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+  	min-height: 40px;
+}
+.rectangle-emp-1{
+	position: absolute;
+	left: -14%;
+    top: 6%;
+}
+.right-block{
+	display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.rectangle-emp-2{
+	position: absolute;
+	right: -18%;
+    top: -40%;
+}  	
+.rectangle-background-title-1{
+	position: absolute;
+	top: 30%;
+    left: -20%;
+}
+.employees-container-wrapper{
+	position: relative;
+    margin-top: 40px;
+}
+.employees-container{
+	max-width: 960px;
+}
+.rectangle-background-title-2{
+	position: absolute;
+	right: -20%;
+    top: -14%;
+}
+.title-container-wrapper{
+	position: relative;
+	overflow: hidden;
+}
+.rectangle-background{
+	position: absolute;
+    right: -20%;
+    top: 15%;
+}
+.service-image{
+	width: 100%;
+}
+.clients{
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.block-title{
+	font-family: 'Tw Cen MT Std' !important;
+	color: #C62B2B;
+	font-weight: bold;
+	letter-spacing: 3px;
+	padding-left: 0px;
+    padding-right: 0px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.block-title>span{
+    padding: 0 3px 2px;
+}
+.block-title-company{
+	font-family: 'Tw Cen MT Std' !important;
+	color: #C62B2B;
+	font-weight: bold;
+	letter-spacing: 5px;
+	padding-left: 0px;
+    padding-right: 0px;
+    font-size: 14px;
+	right: -5px;
+}
+.block-title-company-2{
+	font-family: 'Tw Cen MT Std' !important;
+	color: #C62B2B;
+	font-weight: bold;
+	letter-spacing: 5px;
+	padding-left: 0px;
+    padding-right: 0px;
+    font-size: 14px;
+	right: -5px;
+}
+.block-title-company-1{
+	font-family: 'Tw Cen MT Std' !important;
+	color: #C62B2B;
+	font-weight: bold;
+	letter-spacing: 5px;
+	padding-left: 0px;
+    padding-right: 0px;
+    font-size: 14px;
+	right: -5px;
+}
+.missions-button-container{
+	max-width: 280px;
+	position: relative;
+}
+#mission_button{
+	font-size: 22px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    border: 1px solid black;
+    right: -10%;
+    top: -6%;
+    width: 55px;
+    height: 55px;
+        z-index: 222;
+    padding: 6px 0px;
+    border-radius: 35px;
+    text-align: center;
+    line-height: 1.42857;
+}
+.bold-text{
+	font-weight: 700;
+}
+
+.form-info-container-inner{
+	max-width: 490px;
+}
+#send_btn{
+	font-family: 'Tw Cen MT Std' !important;
+	letter-spacing: 4px;
+	width: 250px;
+    height: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d6da3;
+    border:1px solid #2d6da3 !important;
+}
+#send_btn:hover{
+    color: white;
+    background-color: #2d6da3;
+}
+.footer-heading{
+	letter-spacing: 5px;
+	font-family: 'Tw Cen MT Std' !important;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+}
+.form-title{
+	font-size: 46px;
+}
+.form-info{
+	max-width: 500px;
+    width: 492px;
+    font-family: 'Source Serif Pro', serif;
+	font-size: 22px;
+	padding-left: 0;
+    padding-right: 0;
+}
+.form-phone{
+	font-family: 'Tw Cen MT Std' !important;
+	font-size: 31px;
+    font-weight: 500;
+	color: #6F6F6F;
+}
+.form-label{
+	font-family: 'Tw Cen MT Std' !important;
+	font-weight: bold;
+	color: #C62B2B;
+	font-size: 22px;
+	letter-spacing: 7px;
+}
+.form-heading{
+	font-size: 20px;
+	letter-spacing: 4px;
+	font-family: 'Tw Cen MT Std' !important;
+	font-weight: bold;
+}
+.clients-title{
+	font-size: 35px;
+	font-family: 'Tw Cen MT Std';
+}
+.service-block{
+	width: 100%;
+}
+.divided-block:after{
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 15px;
+   left: 15px;
+   right: 15px;
+   bottom: 15px;
+   border-right: 2px solid #c7c7c7;
+}
+.service-title{
+	font-family: 'Tw Cen MT Std';
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.service-message{
+	line-height: 1.5;
+}
+.services-container{
+	max-width: 840px;
+}
+.capital-letter{
+	font-family: sans-serif;
+	font-size: 96px;
+    font-weight: bold;
+    line-height: 96px;
+    display: block;
+    float: left;
+    margin: 0 15px 30px 0;
+    padding: 10px 20px;
+    border: 1px solid black;
+    color: #c62b2b;
+    box-shadow: 10px 10px #cecece;
+}
+.capital-heading{
+	padding-right: 0px;
+    padding-left: 105px;
+}
+.text-paragraph{
+    line-height: 1.3em;
+    font-weight: 200;
+	font-family: 'Roboto Slab',serif;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+.text-paragraph-contact{
+    line-height: 1.3em;
+    font-weight: 200;
+	font-family: 'Roboto Slab',serif;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+.amin-logo{
+	width: 100px;
+    height: 100px;
+}
+.nav-link{
+	font-size: 16px;
+	font-weight: 700;
+}
+.sub-heading{
+    font-size: 36px;
+    font-family: 'Rokkitt', serif;
+}
+.sub-heading .bold-text{
+    font-weight: 700;
+}
+.title-container{
+	padding-top: 100px;
+}
+
+.container-fluid{
+	width: 100%;
+}
+.content-container{
+	max-width: 755px;
+}
+.tele-input-group:before{
+	background-color: black;
+}
+.company-logo-block-1{
+	position: absolute;
+	top: -25px;
+}
+.company-logo-block-2{
+	position: absolute;
+	top: -35px;
+}
+.company-logo-block-3{
+	position: absolute;
+	top: -35px;
+}
+.company-main-text{
+	color: #000000;
+    line-height: 25px;
+    font-family: 'Tw Cen MT Std';
+    font-weight: 500;
+    font-size: 19px;
+}
+.company-description{
+	color: #000000;
+	font-family: 'Source Serif Pro';
+	font-size: 16px;
+	font-weight: 300;
+}
+.mb-60{
+	margin-bottom: 60px;
+}
+.mb-60-mobile{
+	margin-bottom: 60px;
+}
+.mb-50{
+	margin-bottom: 50px;
+}
+.mb-20{
+	margin-bottom: 20px;
+}
+.mb-40{
+	margin-bottom: 40px;
+}
+.mb-80{
+	margin-bottom: 80px;
+}
+.mb-100{
+	margin-bottom: 100px;
+}
+.mb-170{
+	margin-bottom: 170px !important;
+}
+.pt-120{
+	padding-top: 120px;
+}
+.pt-100{
+	padding-top: 100px;
+}
+.pt-10{
+	padding-top: 20px;
+}
+.pt-20{
+	padding-top: 20px;
+}
+.pt-30{
+	padding-top: 30px;
+}
+.pt-40{
+	padding-top: 40px;
+}
+.pt-45{
+	padding-top: 33px;
+}
+.pt-50{
+	padding-top: 50px;
+}
+.pt-60{
+	padding-top: 60px;
+}
+.pt-25{
+	padding-top: 25px;
+}
+.pt-35{
+	padding-top: 35px;
+}
+.pb-10{
+	padding-bottom: 10px;
+}
+.pt-45{
+	padding-top: 45px;
+}
+.pb-60{
+	padding-bottom: 60px;
+}
+.pb-65{
+	padding-bottom: 65px;
+}
+.pb-40{
+	padding-bottom: 40px;
+}
+.pb-45{
+	padding-bottom: 45px;
+}
+.pb-90{
+	padding-bottom: 90px;
+}
+.pt-40{
+	padding-top: 40px;
+}
+.pt-10{
+	padding-top: 10px;
+}
+.pt-103{
+	padding-top: 103px;
+}
+/*.pr-14{
+	padding-right: 14px;
+}*/
+.pr-7{
+	padding-right: 7px;
+}
+.pr-27{
+	padding-right: 27px;
+}
+.pl-45{
+	padding-left: 45px;
+}
+.mb-56{
+	margin-bottom: 56px;
+}
+.pt-60-resized{
+	padding-top: 60px;
+}
+.pt-60-resized-1{
+	padding-top: 60px;
+}
+.pr-12{
+	padding-right: 5px;
+}
+.pr-4{
+	padding-right: 4px !important; 
+}
+
+.centered-block{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-container-wrapper{
+    padding-top: 80px;
+	position: relative;
+	overflow:hidden;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 22px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #C62B2B;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+div.d-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+div.d-title h1, div.d-title img{
+    display: block;
+}
+
+div.d-title h1{
+    margin: auto 0;
+    width: 240px;
+}
+
+div.d-title h1:first-of-type{
+    text-align: right;
+    margin-right: -1.1em;
+    margin-left: 1em;
+}
+
+div.d-title img{
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.title-like-h1{
+	font-size: 20px;
+	font-family: 'Tw Cen MT Std';
+	font-weight: bold;
+	letter-spacing: 1.1em;
+}
+
+div.client-card{
+    padding: 0 25px;
+}
+
+div.client-card .block-title{
+    float: right;
+}
+
+div.client-card img.screen{
+    width: 100%;
+    box-shadow: 25px 25px #cecece;
+    margin-bottom: 45px;
+
+}
+div.client-card img.logo{
+    max-width: 35%;
+    max-height: 100px;
+    width: unset;
+    height: unset;
+    margin-bottom: 20px;
+}
+
+div.client-card h4{
+    font-size: 18px;
+	font-family: 'Tw Cen MT Std';
+	font-weight: bold;
+}
+
+div.client-card p{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    max-width: 60%;
+}
+
+div.carousel .owl-nav img{
+    position: absolute;
+    top: 30%;
+}
+
+div.carousel img.owl-next{
+    right: 60px;
+}
+
+div.carousel img.owl-prev{
+    transform: rotate(180deg);
+    left: 60px;
+}
+
+@media screen and (min-width: 801px) {
+    .mobile-only{
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .desktop-only{
+        display: none !important;
+    }
+
+	.mb-60-mobile{
+		margin-bottom: 20px;
+	}
+
+    .title-container{
+        padding-top: 20px;
+    }
+    .mobile-ps-40{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .mobile-ml-100{
+        margin-left: 100px;
+    }
+    .mobile-ml-60{
+        margin-left: 60px;
+    }
+    .mobile-mb-35{
+        margin-bottom: 35px;
+    }
+    .company-text-block{
+        text-align: justify;
+    }
+    .company-logo-block-1{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+    }
+    .company-logo-block-2{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+    }
+    .company-logo-block-3{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+    }
+
+    div.company-logo-block-1 .pl-45{
+        padding-left: 0;
+    }
+    div.company-logo-block-2 .pl-45{
+        padding-left: 0;
+    }
+    div.company-logo-block-3 .pl-45{
+        padding-left: 0;
+    }
+    .lazy.main-image{
+        content: url('assets/HF-Header-FirstFrame-M.png') !important;
+    }
+    .title-container-wrapper{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-image-block{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .block-title-company{
+        font-family: 'Tw Cen MT Std' !important;
+        color: #C62B2B;
+        font-weight: bold;
+        letter-spacing: 3px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 16px !important;
+    }
+    .block-title-company-1{
+        font-family: 'Tw Cen MT Std' !important;
+        color: #C62B2B;
+        font-weight: bold;
+        letter-spacing: 3px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    div.client-card p{
+        max-width: 100%;
+    }
+
+    .pt-60-resized{
+        padding-top: 0px;
+    }
+    .pt-60-resized-1{
+        padding-top: 0px;
+    }
+    .right-block{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .pl-45{
+        padding-left: 15px !important;
+    }
+        /*.content-container-wrapper{
+            padding-top: 65px !important;
+            padding-right: 20px !important;
+            padding-left: 35px !important;
+        }*/
+        .form-info{
+        max-width: 500px;
+        width: 100% !important;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 22px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .nav-link:before{
+    position: unset;
+    margin-right: 0rem;
+    }
+    .nav-link{
+        border-bottom: 1px solid #cbba5e;
+        margin: 0 10%;
+    }
+
+    .block-title{
+        padding-left: 15px;
+    }
+    .row.vdivide [class*='col-']:not(:last-child):after{
+        display: none;
+    }
+
+    .employees-container>div{
+        justify-content: center;
+    }
+    .employee{
+        flex-basis: 80%;
+    }
+    .btn-link{
+        padding-left: 0px !important;
+    }
+    .title-like-h1{
+        font-size: 13px !important;
+    }
+    .divided-block:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-right: 0px !important;
+    }
+    .capital-heading{
+        padding-left: 0px !important;
+    }
+    .block-title{
+        font-size: 11px;
+    }
+    .block-title-company{
+        font-size: 11px;
+    }
+    .block-title-company-2{
+        font-size: 11px;
+    }
+    .text-paragraph{
+        font-size: 15px !important;
+        line-height: 1.3em;
+    }
+    .rectangle-background-title-1{
+        display: none;
+    }
+    .form-title{
+        font-size: 28px !important;
+    }
+    .rectangle-emp-1{
+        display: none;
+    }
+    .rectangle-emp-2{
+        display: none;
+    }
+    .footer-heading{
+        letter-spacing: -1px !important;
+        font-size: 15px !important;
+
+    }
+    .rectangle-background-title-2{
+        display: none;
+    }
+    
+    .clients:not(:last-child){
+        padding-bottom: 30px;
+    }
+    .service-block{
+        margin-left: 0px !important;
+        margin-right: 0px !important;  
+    }
+    .our-mission-title{
+        font-size: 25px !important;
+    }
+    .pt-120{
+        padding-top: 60px;
+    }
+}

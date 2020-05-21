@@ -1,130 +1,364 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Remedy Prototype</title>
-    <style>
-        #canvas
-        {
-            max-width: 1200px;
-            margin: 10px auto;
-            padding: 20px;
-        }
-        .grid-container {
-            display: flex;
-            flex-wrap: wrap;
-            clear: both;
-        }
-
-        .grid-item {
-            width: 30%;
-            max-width: 360px;
-            max-height: 206px;
-            margin-top: 2.5%;
-            margin-left: 2.5%;
-        }
-
-        img.hover-image {
-            width: 100%;
-            height: 100%;
-        }
-        @media only screen and (max-width: 750px) {
-            .grid-item {
-                width: 100%;
-                max-width: none;
-                max-height: none;
-                margin-top: 2.5%;
-                margin-left: 2.5%;
-            }
-        }
-    </style>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-
-    
-  </head>
-  <body>
-    <div id="canvas">
-        <div class="grid-container">
-            <div class="grid-item">
-                <a href="#">
-                    <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139158585-WQHE8KQDKZLP7ATYO62N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/sonnys-3.gif?format=750w" data-static="http://via.placeholder.com/400x250" src="http://via.placeholder.com/400x250" />
-                </a>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/owl/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owl/assets/owl.theme.default.min.css">
+<link href="assets/font/stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="./styles/hp.css" rel="stylesheet" type="text/css"/>
+</head>
+<body id="{squarespace.page-id}" class="{squarespace.page-classes} page-{collection.urlId}{.if template.mobileStylesEnabled} mobile-enabled{.end}">
+	
+<div class="container-fluid title-container-wrapper">
+	<img class="rectangle-background-title-1" src="assets/Rectangle16.png">
+	<img class="rectangle-background-title-2" src="assets/Rectangle15.png">
+	<div class="container title-container">
+		<div class="row">
+			<div class="col-md-12 text-center mb-60-mobile mobile-only">
+				<img class="main-logo" src="assets\updated\HudsonFoundry__Logo_NoTagline-05.svg" width="100px" height="100px">
+			</div>
+			<div class="col-md-12 text-center mb-60-mobile mobile-only">
+				<h1 class="title-like-h1">HUDSON FOUNDRY</h1>
             </div>
-            <div class="grid-item">
-                    <a href="#">
-                        <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139014882-OJB3DIDYYR20EZA4JV1O/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/crossrope2.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
-                    </a>
-            </div>
-            <div class="grid-item">
-                    <a href="#">
-                    <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568138869428-2SWDOVIRGVEPJUCQIC7N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/lowes2.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
-                    </a>
-            </div>
-            <div class="grid-item">
-                    <a href="#">
-                    <img  class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568140564177-CJ5U9QJVAYMOI8ZCFPH5/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/furon.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
-                    </a>
+            
+            <div class="col-md-12 text-center mb-60-mobile desktop-only d-title">
+                <h1 class="title-like-h1">HUDSON</h1>
+                <img class="main-logo" src="assets\updated\HudsonFoundry__Logo_NoTagline-05.svg" width="100px" height="100px">
+                <h1 class="title-like-h1">FOUNDRY</h1>
+			</div>
+			<div class="col-md-12 text-center mb-50 main-image-block">
+				<img src="assets/HF-Header-FirstFrame-D.png" id="MainImage" class="lazy main-image" data-src-mobile="assets/Phone_1_2_RES_10.1MB.gif" data-src-retina="assets/Phone Revised 2.gif" data-src="assets/Transparent_Wide.gif" width="100%" height="100%">
+			</div>
+			<div class="col-md-12 text-center mb-40 sub-heading">
+				Technology in the <span class="bold-text">Wild</span>
+			</div>
+  		</div>
+	</div>	
+</div>
+<div class="container navigation-container content-container">
+	<div class="row vdivide">
+		<div class="col-md-3 text-center nav-link">
+				<button type="button" class="btn btn-link" id="tale_btn">OUR TALE</button>
+		</div>
+		<div class="col-md-3 text-center nav-link">
+				<button type="button" class="btn btn-link" id="mission_btn">MISSIONS</button>
+		</div>
+		<div class="col-md-3 text-center nav-link">
+				<button type="button" class="btn btn-link" id="talent_btn">TALENT</button>
+		</div>
+		<div class="col-md-3 text-center nav-link">
+				<button type="button" class="btn btn-link" id="contact_btn">CONTACT</button>
+		</div>
+	</div>
+</div>
+<div class="container-fluid content-container-wrapper">
+	<img class="rectangle-background" src="assets/Rectangle.png">
+	<div class="container services-container">
+		<div class="col-12">
+			<div class="row">
+				<div class="col-12 block-title pdx-5">
+                    <span class="underline-3">OUR TALE</span>
                 </div>
-            <div class="grid-item">
-                    <a href="#">
-                    <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568144190408-UXFS7SM8QPQOLGZN9J3G/ke17ZwdGBToddI8pDm48kIisVeufsLaqPYS75OuX1FxZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGUIyZMpo6jDvOlV8ELZznZDi-rr9EJ6o3n8IpvEJDIMaEcAfnVBrEqrgp1UxUHGkY/burts.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
-                    </a>
+				<div class="col-12 mb-100 pdx-5">
+					<p class="text-paragraph"><span class="capital-letter">T</span>he country is our home. The Hudson Foundry is a boutique agency that specializes in making good ideas happen. From the seed of a concept, we cultivate business plans, design experiences, then manufacture and operate them on a human scale.</p> <p class="text-paragraph">Our current family of next-gen technology ventures span real estate, fashion, finance and media. Our projects are not just mere clients — we are building an ecosystem of mindful enterprises with scaling and collaborative futures in mind.</p> <p class="text-paragraph">For us, the Hudson Valley is more than a destination for urban escape, it’s truly an innovative hub for creative and engineering minds who have chosen to live their professional lives in serenity among the trees.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="block-title pdx-5">
+                    <span class="underline-3">PROJECTS</span>
+                </div>
+				<div class="col-12 pdx-5">
+					<p class="text-paragraph"><span class="capital-letter">A</span>ll of our work is home grown, free range, and stone ground. The best part? Being country-bound let's us deliver enterprise quality craftsmanship stress free, on-budget, and on-time.</p>
+				</div>
+			</div>
+		</div>
+	</div>		
+</div>
+<div class="container carousel">
+    <div class="row">
+        <div class="col-12 owl-carousel">
+            <div class="client-card">
+                <div class="block-title">
+                    <span class="underline-3">COMPUSA</span>
+                </div>
+                <img class="screen" src="assets/updated/Optimized/CompUSA-Final.jpg" />
+                <img class="logo" src="assets/updated/CompUSA/20d3ccc.svg" />
+                <h4>2020 re-imagination of a legacy brands digital offering</h4>
+                <p> 
+                    A forward-looking UX/UI redesign of desktop and mobile sites, redevelopment of entire stack, online app, mobile site, and new API automation for aggregating + filtering deals from multiple sources.</p>
             </div>
-            <div class="grid-item">
-                    <a href="#">
-                    <img class="hover-image" data-animation="http://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568143211545-UIAUEAHT4C0FV6UIMDXZ/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/espn5.gif?format=750w" data-static="http://via.placeholder.com/320x180" src="http://via.placeholder.com/320x180" />
-                    </a>
+            <div class="client-card">
+                <div class="block-title">
+                    <span class="underline-3">ZERO VACANCY</span>
+                </div>
+                <img class="screen" src="assets/updated/Optimized/Falling-Business-Cards-Mockup-2.jpg" />
+                <img class="logo" src="assets/Project Logos_ZeroVacancy.svg" />
+                <h4>A pioneering advertising platform for real-estate discounts</h4>
+                <p> 
+                    We built a new platform with landlords across the country to offer deals on rent to the folks who help make our cities strong. The software included a consumer-friendly brand image and a complete geo-locating mobile site.</p>
             </div>
+            <div class="client-card">
+                <div class="block-title">
+                    <span class="underline-3">INFACE MEDIA</span>
+                </div>
+                <img class="screen" src="assets/updated/Optimized/IFM-Look-Book-12-Page-Version@2x.jpg" />
+                <img class="logo" src="assets/Logos_InfaceMedia.svg" />
+                <h4>A proprietary digital out-of-home video and advertising network</h4>
+                <p> 
+                    Designed & launched a 200+ location digital signage combination network including custom designed and manufactured screens, and ongoing digital media management from creation to management.</p>
+            </div>
+            <div class="client-card">
+                <div class="block-title">
+                    <span class="underline-3">WOLF + LAMB</span>
+                </div>
+                <img class="screen" src="assets/updated/Optimized/frame10@2x.jpg" />
+                <img class="logo" src="assets/Logos_W+L.svg" />
+                <h4>Wolf + Lamb Hudson Valley Event Brands</h4>
+                <p> 
+                    We designed, branded and co-produced a successful, ongoing series of exciting country events. Each event was carefully calibrated in both color, design and tone for the various communities to which they were focused.</p>
+            </div>
+            <div class="client-card">
+                <div class="block-title">
+                    <span class="underline-3">MILLIONAIRE</span>
+                </div>
+                <img class="screen" src="assets/updated/Optimized/MacBook_Pro_08.jpg" />
+                <img class="logo" src="assets/Project Logos_Millionaire.svg" />
+                <h4>A luxury eco-concept brand that redefines “the rich life”</h4>
+                <p> 
+                    Developed entirely in-house, this trend transcendent, skillfully crafted, and ethically produced brand offered collections about everyday pleasure—quality that feels good in your hand and spirit.</p>
+            </div>
+            <div class="client-card">
+                <div class="block-title">
+                    <span class="underline-3">TUBBYS</span>
+                </div>
+                <img class="screen" src="assets/updated/Optimized/Screen.jpg" />
+                <img class="logo" src="assets/updated/Tubbys/Tubbys__Black.png" />
+                <h4>A local bar with a lot to say</h4>
+                <p> 
+                    We redesigned Tubby’s website with a custom site to showcase their incredible, varied menu, musical offerings and whim. The core of the site was built on customer-friendly Squarespace allowing self-upkeep.</p>
+            </div>
+            
+        </div>  
+    </div>
+</div>
+<div class="container-fluid content-container-wrapper">
+	<div class="container content-container talent-container">
+		<div class="row">
+			<div class="block-title pdx-5">
+                <span class="underline-3">TALENT</span>
+            </div>
+			<div class="col-12 pdx-5">
+				<p class="text-paragraph"><span class="capital-letter">O</span>ur team prides itself on multifaceted perspectives. From careers in art-direction to indie record labels, we understand what it takes to bring an idea to market — thoughtfully, expeditiously, and successfully.</p>
+            </div>
+            <div style="clear: both"></div>
+  		</div>
+	</div>
+</div>
+<div class="container-fluid employees-container-wrapper">
+	<img class="rectangle-emp-1" src="assets/Rectangle38.png">
+	<!-- <img class="rectangle-emp-2" src="assets/Rectangle37.png"> -->
+<div class="container employees-container">
+	<div class="row">
+		<div class="col-md-4 text-center mb-80 employee">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="assets/emps/emp2.svg">
+				</div>
+				<div class="col-md-12 initials pt-45 pb-10">
+					Z E
+				</div>
+				<div class="col-md-12 employee-title">
+					Zev Eisenberg
+				</div>
+				<div class="col-md-12 employee-position">
+					Man With a Plan
+				</div>
+			</div>
+        </div>
+        <div class="col-md-4 text-center mb-80 employee">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="assets/emps/emp7.svg">
+				</div>
+				<div class="col-md-12 initials pt-45 pb-10">
+					I F
+				</div>
+				<div class="col-md-12 employee-title">
+					Ivan Freaner
+				</div>
+				<div class="col-md-12 employee-position">
+					Don of Design
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4 text-center mb-80 employee">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="assets/emps/emp1.svg">
+				</div>
+				<div class="col-md-12 initials pt-45 pb-10">
+					A W
+				</div>
+				<div class="col-md-12 employee-title">
+					Amelia Williams
+				</div>
+				<div class="col-md-12 employee-position">
+					Creative Visionary
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 text-center mb-80 employee">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="assets/emps/emp6.svg">
+				</div>
+				<div class="col-md-12 initials pt-45 pb-10">
+					M T
+				</div>
+				<div class="col-md-12 employee-title">
+					Michelle Traub
+				</div>
+				<div class="col-md-12 employee-position">
+					Master of Communications
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 text-center mb-80 employee">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="assets/emps/emp5.svg">
+				</div>
+				<div class="col-md-12 initials pt-45 pb-10">
+					S M
+				</div>
+				<div class="col-md-12 employee-title">
+					Shane Menaker
+				</div>
+				<div class="col-md-12 employee-position">
+					The Sensei
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 text-center mb-80 employee">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="assets/emps/emp4.svg">
+				</div>
+				<div class="col-md-12 initials pt-45 pb-10">
+					E H
+				</div>
+				<div class="col-md-12 employee-title">
+					Ed Havens
+				</div>
+				<div class="col-md-12 employee-position">
+					The Conductor
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="container form-container pt-120 mobile-ps-40">
+    <div class="col-md-12 text-center mb-40 sub-heading">
+        Technology in the <span class="bold-text">Wild</span>
+    </div>
+	<div class="container form-container-inner">
+	    <div class="row text-center centered-block">
+		    <div class="col-md-12 form-label">
+				<span class="underline-7">CONTACT</span>
+			</div>
+            <form class="pt-30" id="contentForm" name="contentForm" enctype="multipart/form-data" role="form" data-toggle="validator" novalidate="true" action="https://formspree.io/xnqqrrok" method="POST">
+                <div class="form schedule-assessment">
+		  	        <div class="form-row contact-info">
+                        <p class="text-paragraph-contact">Looking to manifest your own concept?
+                            We’re currently considering new clients, tell us about your project.
+                            </p>
+                        <span class="phone">(845) 309-7454</span>
+			        </div>
+                    <div class="form-row">
+            	        <div class="col-md-12 form-heading pt-20">
+				            NAME
+			            </div>
+                        <div class="form-group col-md-12 pt-10">
+                            <label for="full_name" class="sr-only">Name: </label>
+                            <input class="send-form-input" name="full_name" id="full_name"  type="text" value="" required="required" data-error="Please enter your name.">
+                            <div class="help-block with-errors"></div>
+                        </div><!-- close col-->
+                        <div class="col-md-12 form-heading pt-20">
+                            EMAIL
+                        </div>
+                        <div class="form-group col-md-12 pt-10">
+                            <label for="email" class="sr-only">Email Address: </label>
+                            <input class="send-form-input" name="email" id="email"  type="email" value="" required="required" data-error="Please enter a valid email.">
+                            <div class="help-block with-errors"></div>
+                        </div> 
+                        <div class="col-md-12 form-heading pt-20">
+                            MESSAGE
+                        </div>
+                        <div class="form-group col-md-12 pt-10">
+                            <label for="full_name" class="sr-only">Message </label>
+                            <textarea class="send-form-input send-textarea" rows="5" name="full_name" id="full_message"  value="" required="required" data-error="Please enter your message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div><!-- close row-->
+                    <div class="form-group text-center pt-30">
+                        <input class="submit center-block btn btn-outline-primary" id="send_btn" value="SEND IT OVER" type="submit">
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 
 
-    <!--
-        GIF URLs
-        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139158585-WQHE8KQDKZLP7ATYO62N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/sonnys-3.gif?format=750w
-        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568139014882-OJB3DIDYYR20EZA4JV1O/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/crossrope2.gif?format=750w
-        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568138869428-2SWDOVIRGVEPJUCQIC7N/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/lowes2.gif?format=750w
-        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568140564177-CJ5U9QJVAYMOI8ZCFPH5/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/furon.gif?format=750w
-        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568144190408-UXFS7SM8QPQOLGZN9J3G/ke17ZwdGBToddI8pDm48kIisVeufsLaqPYS75OuX1FxZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGUIyZMpo6jDvOlV8ELZznZDi-rr9EJ6o3n8IpvEJDIMaEcAfnVBrEqrgp1UxUHGkY/burts.gif?format=750w
-        https://images.squarespace-cdn.com/content/v1/555cd0b1e4b0db20315e08a0/1568143211545-UIAUEAHT4C0FV6UIMDXZ/ke17ZwdGBToddI8pDm48kC8F-L05WT-iLREejLZrglFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGzQcamllTGAe8yo_RaU0sSfFaFkFYyuS1i-3Rn60_ioFtO8nJtk629tZGIWiyY3XQ/espn5.gif?format=750w
+<div class="container footer-container pt-30 mb-100" style="margin-bottom: 110px;">
+	<div class="row text-center">
+		<div class="col-md-12 footer-heading">
+			HUDSON FOUNDRY • MILAN, NEW YORK • (845) 309-7454
+		</div>
+	</div>
+</div>
 
-    -->
+<!-- MODAL -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+	  	<h5 class="modal-title" style="width: 100%; margin: 0 auto;" id="exampleModalLabel">Thanks,</h5>
+        a project manager will contact you shortly.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <script type="text/javascript">
-        $( document ).ready(function() {
-            $(".hover-image").each(function(){
-                var imageURL = $(this).attr("data-animation");
-                var img = new Image();
-                img.src = imageURL;
-                //If the browser doesn't support hover
-                if (!Modernizr.hovermq) {
-                    this.src = imageURL;
-                } 
-            });
-
-            if (Modernizr.hovermq) {
-                $(".hover-image").hover(function(){
-                    //Hover In
-                    var imageURL = $(this).attr("data-animation");
-                    this.src = imageURL;
-                }, function(){
-                    //Hover Out
-                    var imageURL = $(this).attr("data-static");
-                    this.src = imageURL;
-                });
-            }
-        });
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+<script src="assets/owl/owl.carousel.min.js"></script>
+<script src="scripts/functions.js"></script>
 
 
-    </script>
-  
-    <script type="text/javascript">
-  /*! modernizr 3.6.0 (Custom Build) | MIT *
- * https://modernizr.com/download/?-hovermq-setclasses !*/
-!function(e,n,t){function o(e){var n=h.className,t=Modernizr._config.classPrefix||"";if(m&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),m?h.className.baseVal=n:h.className=n)}function i(e,n){return typeof e===n}function s(){var e,n,t,o,s,a,r;for(var l in d)if(d.hasOwnProperty(l)){if(e=[],n=d[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=i(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)a=e[s],r=a.split("."),1===r.length?Modernizr[r[0]]=o:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=o),u.push((o?"":"no-")+r.join("-"))}}function a(e,n){if("object"==typeof e)for(var t in e)p(e,t)&&a(t,e[t]);else{e=e.toLowerCase();var i=e.split("."),s=Modernizr[i[0]];if(2==i.length&&(s=s[i[1]]),"undefined"!=typeof s)return Modernizr;n="function"==typeof n?n():n,1==i.length?Modernizr[i[0]]=n:(!Modernizr[i[0]]||Modernizr[i[0]]instanceof Boolean||(Modernizr[i[0]]=new Boolean(Modernizr[i[0]])),Modernizr[i[0]][i[1]]=n),o([(n&&0!=n?"":"no-")+i.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function r(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):m?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function l(){var e=n.body;return e||(e=r(m?"svg":"body"),e.fake=!0),e}function f(e,t,o,i){var s,a,f,u,d="modernizr",c=r("div"),p=l();if(parseInt(o,10))for(;o--;)f=r("div"),f.id=i?i[o]:d+(o+1),c.appendChild(f);return s=r("style"),s.type="text/css",s.id="s"+d,(p.fake?p:c).appendChild(s),p.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=d,p.fake&&(p.style.background="",p.style.overflow="hidden",u=h.style.overflow,h.style.overflow="hidden",h.appendChild(p)),a=t(c,e),p.fake?(p.parentNode.removeChild(p),h.style.overflow=u,h.offsetHeight):c.parentNode.removeChild(c),!!a}var u=[],d=[],c={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){d.push({name:e,fn:n,options:t})},addAsyncTest:function(e){d.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=c,Modernizr=new Modernizr;var p,h=n.documentElement,m="svg"===h.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;p=i(e,"undefined")||i(e.call,"undefined")?function(e,n){return n in e&&i(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),c._l={},c.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},c._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,o;for(e=0;e<t.length;e++)(o=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){c.addTest=a});var v=function(){var n=e.matchMedia||e.msMatchMedia;return n?function(e){var t=n(e);return t&&t.matches||!1}:function(n){var t=!1;return f("@media "+n+" { #modernizr { position: absolute; } }",function(n){t="absolute"==(e.getComputedStyle?e.getComputedStyle(n,null):n.currentStyle).position}),t}}();c.mq=v,Modernizr.addTest("hovermq",v("(hover)")),s(),o(u),delete c.addTest,delete c.addAsyncTest;for(var g=0;g<Modernizr._q.length;g++)Modernizr._q[g]();e.Modernizr=Modernizr}(window,document);
-  </script>
-  </body>
+</body>
 </html>

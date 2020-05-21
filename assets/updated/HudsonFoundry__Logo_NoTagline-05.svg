@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92.54" height="92.54" viewBox="0 0 92.54 92.54">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke:#a79430;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="prefix__HudsonFoundry__Logo_NoTagline-05" transform="translate(-69.92 -.61)">
+        <circle id="prefix__Ellipse_8" cx="45.27" cy="45.27" r="45.27" class="prefix__cls-1" data-name="Ellipse 8" transform="translate(70.92 1.61)"/>
+        <path id="prefix__Path_353" d="M92.75 85.96v-18.4l8.98-7.18V3.5" class="prefix__cls-1" data-name="Path 353"/>
+        <path id="prefix__Path_354" d="M139.62 85.96v-18.4l-8.98-7.18V3.5" class="prefix__cls-1" data-name="Path 354"/>
+        <path id="prefix__Path_355" d="M129.45 49.58c-11.43 9.62-25.09 1.89-26.64.78" data-name="Path 355" style="stroke-linecap:square;fill:none;stroke:#a79430;stroke-miterlimit:10;stroke-width:2px"/>
+    </g>
+</svg>

@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-Light.eot');
+    src: url('TwCenMTStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-Light.woff2') format('woff2'),
+        url('TwCenMTStd-Light.woff') format('woff'),
+        url('TwCenMTStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-BoldCond.eot');
+    src: url('TwCenMTStd-BoldCond.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-BoldCond.woff2') format('woff2'),
+        url('TwCenMTStd-BoldCond.woff') format('woff'),
+        url('TwCenMTStd-BoldCond.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd.eot');
+    src: url('TwCenMTStd.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd.woff2') format('woff2'),
+        url('TwCenMTStd.woff') format('woff'),
+        url('TwCenMTStd.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-LightItalic.eot');
+    src: url('TwCenMTStd-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-LightItalic.woff2') format('woff2'),
+        url('TwCenMTStd-LightItalic.woff') format('woff'),
+        url('TwCenMTStd-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-ExtraBold.eot');
+    src: url('TwCenMTStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-ExtraBold.woff2') format('woff2'),
+        url('TwCenMTStd-ExtraBold.woff') format('woff'),
+        url('TwCenMTStd-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-MediumCond.eot');
+    src: url('TwCenMTStd-MediumCond.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-MediumCond.woff2') format('woff2'),
+        url('TwCenMTStd-MediumCond.woff') format('woff'),
+        url('TwCenMTStd-MediumCond.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-Bold.eot');
+    src: url('TwCenMTStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-Bold.woff2') format('woff2'),
+        url('TwCenMTStd-Bold.woff') format('woff'),
+        url('TwCenMTStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-Italic.eot');
+    src: url('TwCenMTStd-Italic.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-Italic.woff2') format('woff2'),
+        url('TwCenMTStd-Italic.woff') format('woff'),
+        url('TwCenMTStd-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-ExtraBoldCond.eot');
+    src: url('TwCenMTStd-ExtraBoldCond.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-ExtraBoldCond.woff2') format('woff2'),
+        url('TwCenMTStd-ExtraBoldCond.woff') format('woff'),
+        url('TwCenMTStd-ExtraBoldCond.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-UltraBold.eot');
+    src: url('TwCenMTStd-UltraBold.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-UltraBold.woff2') format('woff2'),
+        url('TwCenMTStd-UltraBold.woff') format('woff'),
+        url('TwCenMTStd-UltraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen Classified MT Std';
+    src: url('TwCenClassMTStd-Regular.eot');
+    src: url('TwCenClassMTStd-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TwCenClassMTStd-Regular.woff2') format('woff2'),
+        url('TwCenClassMTStd-Regular.woff') format('woff'),
+        url('TwCenClassMTStd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-SemiMedium.eot');
+    src: url('TwCenMTStd-SemiMedium.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-SemiMedium.woff2') format('woff2'),
+        url('TwCenMTStd-SemiMedium.woff') format('woff'),
+        url('TwCenMTStd-SemiMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-UltraBoldIt.eot');
+    src: url('TwCenMTStd-UltraBoldIt.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-UltraBoldIt.woff2') format('woff2'),
+        url('TwCenMTStd-UltraBoldIt.woff') format('woff'),
+        url('TwCenMTStd-UltraBoldIt.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT Std';
+    src: url('TwCenMTStd-UltraBoldCond.eot');
+    src: url('TwCenMTStd-UltraBoldCond.eot?#iefix') format('embedded-opentype'),
+        url('TwCenMTStd-UltraBoldCond.woff2') format('woff2'),
+        url('TwCenMTStd-UltraBoldCond.woff') format('woff'),
+        url('TwCenMTStd-UltraBoldCond.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
