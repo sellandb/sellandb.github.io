@@ -422,7 +422,7 @@ div.capital-heading .block-title span{
     line-height: 96px;
     display: block;
     float: left;
-    margin: 0 15px 30px 0;
+    margin: 0 25px 30px 0;
     padding: 10px 20px;
     border: 1px solid black;
     color: #c62b2b;
@@ -638,18 +638,10 @@ div.capital-heading .block-title span{
   bottom: 20px;
   right: 22px;
   z-index: 99;
-  font-size: 12px;
   border: none;
   outline: none;
-  background-color: #C62B2B;
-  color: white;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;
+  background-color: transparent;
 }
 
 
@@ -721,6 +713,10 @@ div.client-card p{
     max-width: 60%;
 }
 
+div.carousel{
+    padding: 0;
+}
+
 div.carousel .owl-nav img{
     position: absolute;
     top: 30%;
@@ -733,6 +729,14 @@ div.carousel img.owl-next{
 div.carousel img.owl-prev{
     transform: rotate(180deg);
     left: 60px;
+}
+
+#talent_btn{
+    margin-left: 10px;
+}
+
+#mission_btn{
+    margin-left: 5px;
 }
 
 @media screen and (min-width: 801px) {
@@ -951,5 +955,13 @@ div.carousel img.owl-prev{
     }
     .pt-120{
         padding-top: 60px;
+    }
+
+    #talent_btn{
+        margin-left: unset;
+    }
+    
+    #mission_btn{
+        margin-left: unset;
     }
 }

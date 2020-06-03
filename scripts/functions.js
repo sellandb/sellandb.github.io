@@ -121,15 +121,15 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         items:1,
         loop:true,
-        navElement: "img src='assets/arrow.png' /",
+		navElement: "img src='assets/Group 187.svg' /",
         responsive:{
             0: {
                 stagePadding: 30,
                 nav: false
             },
             800: {
-                stagePadding: 80,
-                nav: true
+                stagePadding: 150,
+                nav: true,
             }
 
         }
