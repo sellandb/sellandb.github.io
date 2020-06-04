@@ -694,11 +694,13 @@ div.client-card img.screen{
 
 }
 div.client-card img.logo{
-    max-width: 35%;
-    max-height: 100px;
     width: unset;
-    height: unset;
+    height: 100px;
     margin-bottom: 20px;
+}
+
+div.client-card img.logo.compusa{
+    padding: 20px;
 }
 
 div.client-card h4{
@@ -708,9 +710,10 @@ div.client-card h4{
 }
 
 div.client-card p{
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     max-width: 60%;
+    font-weight: 200;
 }
 
 div.carousel{
