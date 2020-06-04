@@ -700,7 +700,15 @@ div.client-card img.logo{
 }
 
 div.client-card img.logo.compusa{
-    padding: 20px;
+    padding: 20px 0;
+}
+
+div.client-card img.logo.millionaire{
+    margin-left: -20px;
+}
+
+div.client-card img.logo.zerovacancy{
+    margin-left: 0px;
 }
 
 div.client-card h4{
@@ -714,6 +722,10 @@ div.client-card p{
     font-size: 18px;
     max-width: 60%;
     font-weight: 200;
+}
+
+div.client-card img.logo, div.client-card h4, div.client-card p{
+    margin-left: 25px;
 }
 
 div.carousel{
