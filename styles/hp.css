@@ -681,6 +681,8 @@ div.d-title img{
 
 div.client-card{
     padding: 0 25px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 div.client-card .block-title{
@@ -700,7 +702,7 @@ div.client-card img.logo{
 }
 
 div.client-card img.logo.compusa{
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 div.client-card img.logo.millionaire{

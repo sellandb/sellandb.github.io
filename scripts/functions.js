@@ -124,11 +124,9 @@ $(document).ready(function(){
 		navElement: "img src='assets/Group 187.svg' /",
         responsive:{
             0: {
-                stagePadding: 30,
                 nav: false
             },
             800: {
-                stagePadding: 150,
                 nav: true,
             }
 
